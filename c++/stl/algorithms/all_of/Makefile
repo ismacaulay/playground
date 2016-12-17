@@ -2,7 +2,7 @@
 CXX=clang++
 CXXFLAGS=-c -std=c++1z
 
-EXECUTABLE=main
+EXECUTABLE=main.out
 SOURCES=main.cpp
 OBJECTS=$(SOURCES:.cpp=.o)
 
