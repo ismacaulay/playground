@@ -5,6 +5,7 @@ CXXFLAGS=-c -std=c++1z -Werror -Wall -Wextra -Wpedantic
 EXECUTABLE=main.out
 SOURCES=main.cpp
 OBJECTS=$(SOURCES:.cpp=.o)
+RM=rm -f
 
 all: $(EXECUTABLE)
 
@@ -18,5 +19,5 @@ $(EXECUTABLE): $(OBJECTS)
 	$(CXX) $(CXXFLAGS) $< -o $@
 
 clean:
-	rm *.o $(EXECUTABLE)
+	$(RM) *.o $(EXECUTABLE)
 
