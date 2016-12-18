@@ -1,6 +1,6 @@
 
 CXX=clang++
-CXXFLAGS=-c -std=c++1z
+CXXFLAGS=-c -std=c++1z -Werror -Wall -Wextra -Wpedantic
 
 EXECUTABLE=main.out
 SOURCES=main.cpp
