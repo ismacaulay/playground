@@ -4,12 +4,12 @@
 #include <algorithm>
 
 TEST_CASE("std::mismatch") {
-    std::string s = "Was it a car or a cat I saw";
+    std::string s = "wasitacaroracatisaw";
 
     auto pair = std::mismatch(s.begin(), s.end(), s.rbegin());
 
-    REQUIRE(s.begin() == pair.first);
-    REQUIRE(s.rbegin() == pair.second);
+    REQUIRE(s.end() == pair.first);
+    REQUIRE(s.rend() == pair.second);
 
     std::string v1 = { 2, 3, 4, 5, 6, 7, 8 };
     std::string v2 = { 2, 3, 4, 4, 6, 7, 8 };
