@@ -28,4 +28,11 @@
 *.out
 *.app
 
+# vim
 *.swp
+
+# java
+*.class
+*.jar
+build/
+
